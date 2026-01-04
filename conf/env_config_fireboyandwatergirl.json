@@ -1,0 +1,100 @@
+{
+    "env_name": "森林冰火人中文版",
+    "sub_path": "minigame",
+    "env_short_name": "fireboyandwatergirl",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "同时控制火娃（Fireboy）和冰娃（Watergirl），合作收集所有宝石，并引导他们各自到达终点门。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "jump_right",
+            "jump_left"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "move_down",
+            "mouse_click",
+            "press_key"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/fireboyandwatergirl/prompts/templates/information_gatheringv6.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/fireboyandwatergirl/prompts/templates/self_reflectionv6.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/fireboyandwatergirl/prompts/templates/task_inferencev6.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/fireboyandwatergirl/prompts/templates/action_planningv6.prompt"
+        }
+    }
+}

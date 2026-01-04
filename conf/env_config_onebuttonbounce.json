@@ -1,0 +1,98 @@
+{
+    "env_name": "ONE BUTTON BOUNCE",
+    "sub_path": "minigame",
+    "env_short_name": "onebuttonbounce",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "控制角色进行跳跃（通过 move_up 操作），躲避障碍物，尽可能地获得高分。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_up"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "move_left",
+            "move_right",
+            "move_down",
+            "press_key",
+            "mouse_click"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    0,
+                    0,
+                    1920,
+                    1080
+                ],
+                "axis_division": [
+                    3,
+                    5
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    0,
+                    0,
+                    1920,
+                    1080
+                ],
+                "axis_division": [
+                    3,
+                    5
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/onebuttonbounce/prompts/templates/information_gatheringv8.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/onebuttonbounce/prompts/templates/self_reflectionv8.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/onebuttonbounce/prompts/templates/task_inferencev8.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/onebuttonbounce/prompts/templates/action_planningv8.prompt"
+        }
+    }
+}

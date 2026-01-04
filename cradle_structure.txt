@@ -1,0 +1,1285 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 26AA-56D1
+D:.
+│  .env
+│  .gitignore
+│  cradle_structure.txt
+│  ENVIRONMENTS.md
+│  LICENSE
+│  log_processor.py
+│  python
+│  README.md
+│  requirements.txt
+│  runner.py
+│  test_emb_key.py
+│  test_llm_key.py
+│  __init__.py
+│  
+├─.idea
+│  │  .name
+│  │  Cradle.iml
+│  │  deployment.xml
+│  │  vcs.xml
+│  │  workspace.xml
+│  │  
+│  └─inspectionProfiles
+│          profiles_settings.xml
+│          
+├─.vscode
+│      launch.json
+│      
+├─cache
+│  │  GroundingDINO_SwinB_cfg.py
+│  │  groundingdino_swinb_cogcoor.pth
+│  │  
+│  └─hf
+│      │  version.txt
+│      │  
+│      ├─.locks
+│      │  └─models--bert-base-uncased
+│      └─models--bert-base-uncased
+│          ├─.no_exist
+│          │  └─86b5e0934494bd15c9632b12f734a8a67f723594
+│          │          added_tokens.json
+│          │          special_tokens_map.json
+│          │          
+│          ├─blobs
+│          ├─refs
+│          │      main
+│          │      
+│          └─snapshots
+│              └─86b5e0934494bd15c9632b12f734a8a67f723594
+│                      config.json
+│                      model.safetensors
+│                      pytorch_model.bin
+│                      tokenizer.json
+│                      tokenizer_config.json
+│                      vocab.txt
+│                      
+├─conf
+│      azure_text_config.json
+│      azure_vis_config.json
+│      claude_config.json
+│      env_config_capcut.json
+│      env_config_chrome.json
+│      env_config_dealers.json
+│      env_config_feishu.json
+│      env_config_jump100.json
+│      env_config_outlook.json
+│      env_config_rdr2_main_storyline.json
+│      env_config_rdr2_open_ended_mission.json
+│      env_config_skylines.json
+│      env_config_stardew_cultivation.json
+│      env_config_stardew_farm_clearup.json
+│      env_config_stardew_shopping.json
+│      env_config_xiuxiu.json
+│      openai_config.json
+│      openai_t_config.json
+│      qwen_config.json
+│      restful_claude_config.json
+│      
+├─cradle
+│  │  constants.py
+│  │  __init__.py
+│  │  
+│  ├─config
+│  │  │  config.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          config.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─environment
+│  │  │  environment_registry.py
+│  │  │  skill.py
+│  │  │  skill_registry.py
+│  │  │  skill_registry_factory.py
+│  │  │  ui_control.py
+│  │  │  ui_control_factory.py
+│  │  │  utils.py
+│  │  │  __init__.py
+│  │  │  
+│  │  ├─capcut
+│  │  │  │  skill_registry.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  aug_interact.py
+│  │  │  │  │  shortcut.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          aug_interact.cpython-310.pyc
+│  │  │  │          shortcut.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─tool_skills
+│  │  │  │  │  tools.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          tools.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─chrome
+│  │  │  │  skill_registry.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  aug_interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          aug_interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─dealers
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  basic_skills.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          basic_skills.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─feishu
+│  │  │  │  skill_registry.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  aug_interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          aug_interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─jump100
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  basic_skills.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          basic_skills.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─outlook
+│  │  │  │  skill_registry.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  aug_interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          aug_interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─rdr2
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  buy.py
+│  │  │  │  │  combat.py
+│  │  │  │  │  map.py
+│  │  │  │  │  move.py
+│  │  │  │  │  sell.py
+│  │  │  │  │  trade_utils.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          buy.cpython-310.pyc
+│  │  │  │          combat.cpython-310.pyc
+│  │  │  │          map.cpython-310.pyc
+│  │  │  │          move.cpython-310.pyc
+│  │  │  │          sell.cpython-310.pyc
+│  │  │  │          trade_utils.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  auto_shoot.py
+│  │  │  │  │  follow.py
+│  │  │  │  │  go_to_icon.py
+│  │  │  │  │  navigation.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          auto_shoot.cpython-310.pyc
+│  │  │  │          follow.cpython-310.pyc
+│  │  │  │          go_to_icon.cpython-310.pyc
+│  │  │  │          navigation.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─skylines
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  basic_skills.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          basic_skills.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─software
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  base.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          base.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─stardew
+│  │  │  │  skill_registry.py
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  basic_skills.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          basic_skills.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  buy_item.py
+│  │  │  │  │  farm.py
+│  │  │  │  │  go_home.py
+│  │  │  │  │  go_through_door.py
+│  │  │  │  │  shopping.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          buy_item.cpython-310.pyc
+│  │  │  │          farm.cpython-310.pyc
+│  │  │  │          go_home.cpython-310.pyc
+│  │  │  │          go_through_door.cpython-310.pyc
+│  │  │  │          shopping.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─xiuxiu
+│  │  │  │  skill_registry.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  ├─atomic_skills
+│  │  │  │  │  interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  ├─composite_skills
+│  │  │  │  │  aug_interact.py
+│  │  │  │  │  __init__.py
+│  │  │  │  │  
+│  │  │  │  └─__pycache__
+│  │  │  │          aug_interact.cpython-310.pyc
+│  │  │  │          __init__.cpython-310.pyc
+│  │  │  │          
+│  │  │  └─__pycache__
+│  │  │          skill_registry.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  └─__pycache__
+│  │          skill.cpython-310.pyc
+│  │          skill_registry.cpython-310.pyc
+│  │          skill_registry_factory.cpython-310.pyc
+│  │          ui_control.cpython-310.pyc
+│  │          ui_control_factory.cpython-310.pyc
+│  │          utils.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─gameio
+│  │  │  game_manager.py
+│  │  │  gui_utils.py
+│  │  │  io_env.py
+│  │  │  __init__.py
+│  │  │  
+│  │  ├─lifecycle
+│  │  │  │  ui_control.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          ui_control.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  └─__pycache__
+│  │          game_manager.cpython-310.pyc
+│  │          gui_utils.cpython-310.pyc
+│  │          io_env.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─log
+│  │  │  logger.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          logger.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─memory
+│  │  │  base.py
+│  │  │  basic_vector_memory.py
+│  │  │  local_memory.py
+│  │  │  short_term_memory.py
+│  │  │  vector_store.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          base.cpython-310.pyc
+│  │          basic_vector_memory.cpython-310.pyc
+│  │          local_memory.cpython-310.pyc
+│  │          vector_store.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─module
+│  │      executor.py
+│  │      __init__.py
+│  │      
+│  ├─planner
+│  │      base.py
+│  │      planner.py
+│  │      rdr2_planner.py
+│  │      stardew_planner.py
+│  │      util.py
+│  │      __init__.py
+│  │      
+│  ├─provider
+│  │  │  circle_detector.py
+│  │  │  icon_replacer.py
+│  │  │  sam_provider.py
+│  │  │  __init__.py
+│  │  │  
+│  │  ├─augment
+│  │  │  │  augment.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          augment.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─base
+│  │  │  │  base_embedding.py
+│  │  │  │  base_llm.py
+│  │  │  │  base_provider.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          base_embedding.cpython-310.pyc
+│  │  │          base_llm.cpython-310.pyc
+│  │  │          base_provider.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─execute
+│  │  │  │  skill_execute.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          skill_execute.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─llm
+│  │  │  │  claude.py
+│  │  │  │  llm_factory.py
+│  │  │  │  openai.py
+│  │  │  │  qwen.py
+│  │  │  │  restful_claude.py
+│  │  │  │  restful_claude_client.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          claude.cpython-310.pyc
+│  │  │          llm_factory.cpython-310.pyc
+│  │  │          openai.cpython-310.pyc
+│  │  │          qwen.cpython-310.pyc
+│  │  │          restful_claude.cpython-310.pyc
+│  │  │          restful_claude_client.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─module
+│  │  │  │  action_planning.py
+│  │  │  │  information_gathering.py
+│  │  │  │  self_reflection.py
+│  │  │  │  skill_curation.py
+│  │  │  │  task_inference.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          action_planning.cpython-310.pyc
+│  │  │          information_gathering.cpython-310.pyc
+│  │  │          self_reflection.cpython-310.pyc
+│  │  │          skill_curation.cpython-310.pyc
+│  │  │          task_inference.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─object_detect
+│  │  │  │  gd_provider.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          gd_provider.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─others
+│  │  │  │  coordinates.py
+│  │  │  │  task_guidance.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          coordinates.cpython-310.pyc
+│  │  │          task_guidance.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─process
+│  │  │  │  action_planning.py
+│  │  │  │  information_gathering.py
+│  │  │  │  self_reflection.py
+│  │  │  │  task_inference.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          action_planning.cpython-310.pyc
+│  │  │          information_gathering.cpython-310.pyc
+│  │  │          self_reflection.cpython-310.pyc
+│  │  │          task_inference.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  ├─video
+│  │  │  │  video_clip.py
+│  │  │  │  video_frame_extractor.py
+│  │  │  │  video_ocr_extractor.py
+│  │  │  │  video_recorder.py
+│  │  │  │  __init__.py
+│  │  │  │  
+│  │  │  └─__pycache__
+│  │  │          video_clip.cpython-310.pyc
+│  │  │          video_frame_extractor.cpython-310.pyc
+│  │  │          video_ocr_extractor.cpython-310.pyc
+│  │  │          video_recorder.cpython-310.pyc
+│  │  │          __init__.cpython-310.pyc
+│  │  │          
+│  │  └─__pycache__
+│  │          circle_detector.cpython-310.pyc
+│  │          sam_provider.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─runner
+│  │  │  app_runner.py
+│  │  │  dealers_runner.py
+│  │  │  jump100_runner.py
+│  │  │  rdr2_runner.py
+│  │  │  skylines_runner.py
+│  │  │  stardew_runner.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          jump100_runner.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─utils
+│  │  │  check.py
+│  │  │  dict_utils.py
+│  │  │  encoding_utils.py
+│  │  │  file_utils.py
+│  │  │  icon_utils.py
+│  │  │  image_utils.py
+│  │  │  json_utils.py
+│  │  │  object_utils.py
+│  │  │  os_utils.py
+│  │  │  singleton.py
+│  │  │  string_utils.py
+│  │  │  template_matching.py
+│  │  │  video_utils.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          check.cpython-310.pyc
+│  │          dict_utils.cpython-310.pyc
+│  │          encoding_utils.cpython-310.pyc
+│  │          file_utils.cpython-310.pyc
+│  │          image_utils.cpython-310.pyc
+│  │          json_utils.cpython-310.pyc
+│  │          object_utils.cpython-310.pyc
+│  │          os_utils.cpython-310.pyc
+│  │          singleton.cpython-310.pyc
+│  │          string_utils.cpython-310.pyc
+│  │          template_matching.cpython-310.pyc
+│  │          video_utils.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  └─__pycache__
+│          constants.cpython-310.pyc
+│          __init__.cpython-310.pyc
+│          
+├─deps
+│      groundingdino-0.1.0-cp310-cp310-win_amd64.whl
+│      
+├─docs
+│  │  index.html
+│  │  towards_gcc.html
+│  │  
+│  ├─css
+│  │      bulma-carousel.min.css
+│  │      bulma-slider.min.css
+│  │      bulma.min.css
+│  │      fontawesome.all.min.css
+│  │      index.css
+│  │      
+│  ├─envs
+│  │  │  dealers.md
+│  │  │  groundingdino.md
+│  │  │  new_game.md
+│  │  │  rdr2.md
+│  │  │  skylines.md
+│  │  │  software.md
+│  │  │  stardew.md
+│  │  │  
+│  │  ├─gcc
+│  │  │      README.md
+│  │  │      
+│  │  └─images
+│  │      ├─dealers
+│  │      │      dealer.gif
+│  │      │      dealer_results.png
+│  │      │      dealer_start.jpg
+│  │      │      dealer_video_cover.png
+│  │      │      resolution.png
+│  │      │      
+│  │      ├─rdr2
+│  │      │      direction_map.jpg
+│  │      │      direct_input.png
+│  │      │      enlarge_minimap.png
+│  │      │      game_position.png
+│  │      │      minimap_setting.png
+│  │      │      move_control_now.png
+│  │      │      move_control_previous.png
+│  │      │      navigation_map.jpg
+│  │      │      raw_input.png
+│  │      │      rd2_task_grid_01.gif
+│  │      │      rd2_task_grid_02.gif
+│  │      │      rd2_task_grid_03.gif
+│  │      │      rd2_task_grid_04.gif
+│  │      │      RDR2.jpg
+│  │      │      rdr2_main_storyline_start.jpg
+│  │      │      RDR2_openended_cover.jpg
+│  │      │      rdr2_openended_start.jpg
+│  │      │      RDR2_result.png
+│  │      │      RDR2_story_cover.jpg
+│  │      │      resolution.png
+│  │      │      subtitles.png
+│  │      │      video1.jpg
+│  │      │      video2.jpg
+│  │      │      
+│  │      ├─skylines
+│  │      │      cityskyline_results.png
+│  │      │      cityskyline_video_cover.png
+│  │      │      gameplay.png
+│  │      │      loadgame.png
+│  │      │      resolution.png
+│  │      │      skyline.gif
+│  │      │      skylines_start.jpg
+│  │      │      
+│  │      ├─software
+│  │      │      CapCut_2x2.gif
+│  │      │      capcut_homepage.jpg
+│  │      │      capcut_project.png
+│  │      │      Chrome_2x2.gif
+│  │      │      chrome_initial.png
+│  │      │      Feishu_2x2.gif
+│  │      │      feishu_initial.png
+│  │      │      large_icon.png
+│  │      │      Meitu_2x2.gif
+│  │      │      meitu_initial.png
+│  │      │      OSWorld_result.png
+│  │      │      Outlook_2x2.gif
+│  │      │      outlook_initial.png
+│  │      │      setting.png
+│  │      │      Software_cover.png
+│  │      │      Software_result.png
+│  │      │      
+│  │      └─stardew
+│  │              lock_toolbar.png
+│  │              resolution.png
+│  │              stardew.gif
+│  │              stardew_clearup_start.jpg
+│  │              stardew_cultivation_start.jpg
+│  │              stardew_results.png
+│  │              stardew_video_cover.png
+│  │              tool_hit.png
+│  │              
+│  ├─images
+│  │  │  all_application_tasks.png
+│  │  │  all_game_tasks.png
+│  │  │  applications_wheel.png
+│  │  │  CapCut_2x2.gif
+│  │  │  Chrome_2x2.gif
+│  │  │  cityskyline_results.png
+│  │  │  cityskyline_video_cover.png
+│  │  │  cradle-banner.png
+│  │  │  cradle-framework-pre.png
+│  │  │  cradle-framework.png
+│  │  │  cradle-intro-cr.png
+│  │  │  cradle-intro-web.png
+│  │  │  cradle-intro.png
+│  │  │  dataflow.png
+│  │  │  dealer.gif
+│  │  │  dealer_results.png
+│  │  │  dealer_video_cover.png
+│  │  │  direct_input.png
+│  │  │  enlarge_minimap.png
+│  │  │  examples.png
+│  │  │  Feishu_2x2.gif
+│  │  │  games_wheel.png
+│  │  │  game_position.png
+│  │  │  gcc.jpg
+│  │  │  Meitu_2x2.gif
+│  │  │  minimap_setting.png
+│  │  │  move_control_now.png
+│  │  │  move_control_previous.png
+│  │  │  OSWorld_result.png
+│  │  │  Outlook_2x2.gif
+│  │  │  Path_towards_AGI.png
+│  │  │  raw_input.png
+│  │  │  rd2_task_grid_01.gif
+│  │  │  rd2_task_grid_02.gif
+│  │  │  rd2_task_grid_03.gif
+│  │  │  rd2_task_grid_04.gif
+│  │  │  RDR2.jpg
+│  │  │  RDR2_openended_cover.jpg
+│  │  │  RDR2_result.png
+│  │  │  RDR2_story_cover.jpg
+│  │  │  resolution.png
+│  │  │  skyline.gif
+│  │  │  Software_cover.png
+│  │  │  Software_result.png
+│  │  │  stardew.gif
+│  │  │  stardew_results.png
+│  │  │  stardew_video_cover.png
+│  │  │  subtitles.png
+│  │  │  video1.jpg
+│  │  │  video2.jpg
+│  │  │  
+│  │  ├─dealers
+│  │  │      resolution.png
+│  │  │      
+│  │  ├─skylines
+│  │  │      gameplay.png
+│  │  │      loadgame.png
+│  │  │      resolution.png
+│  │  │      
+│  │  └─stardew
+│  │          resolution.png
+│  │          tool_hit.png
+│  │          
+│  ├─js
+│  │      bulma-carousel.js
+│  │      bulma-carousel.min.js
+│  │      bulma-slider.js
+│  │      bulma-slider.min.js
+│  │      fontawesome.all.min.js
+│  │      index.js
+│  │      
+│  └─video
+│          whole_video.mp4
+│          
+├─res
+│  │  data.json
+│  │  
+│  ├─capcut
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  ├─samples
+│  │  │      click_at_the_media.jpg
+│  │  │      new_project.jpg
+│  │  │      not_click_at_the_media.jpg
+│  │  │      
+│  │  ├─skills
+│  │  │      skill_lib.json
+│  │  │      
+│  │  └─videos
+│  │          soccer.mp4
+│  │          
+│  ├─chrome
+│  │  ├─icons
+│  │  │      three_dot3.png
+│  │  │      
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  └─skills
+│  │          skill_lib.json
+│  │          
+│  ├─dealers
+│  │  ├─prompts
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  └─skills
+│  │          skill_lib.json
+│  │          skill_lib_basic.json
+│  │          
+│  ├─feishu
+│  │  ├─icons
+│  │  │      attach.png
+│  │  │      attach_file.png
+│  │  │      attach_media.png
+│  │  │      calendar.png
+│  │  │      cradle.png
+│  │  │      create_event.png
+│  │  │      meetings.png
+│  │  │      
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  └─skills
+│  │          skill_lib.json
+│  │          
+│  ├─icons
+│  │      pink_mouse.png
+│  │      
+│  ├─jump100
+│  │  ├─prompts
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  ├─saves
+│  │  └─skills
+│  │          skill_lib_basic.json
+│  │          
+│  ├─models
+│  │      ESPCN_x2.pb
+│  │      ESPCN_x3.pb
+│  │      
+│  ├─outlook
+│  │  ├─icons
+│  │  │      3dots.png
+│  │  │      attach.png
+│  │  │      attach_browse.png
+│  │  │      delete.png
+│  │  │      empty.png
+│  │  │      enable_forwarding.png
+│  │  │      forwarding.png
+│  │  │      junk.png
+│  │  │      mail_tab.png
+│  │  │      plus.png
+│  │  │      reply.png
+│  │  │      reply_area.png
+│  │  │      reply_button.png
+│  │  │      send.png
+│  │  │      settings.png
+│  │  │      to_field.png
+│  │  │      to_type.png
+│  │  │      
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  └─skills
+│  │          skill_lib.json
+│  │          
+│  ├─rdr2
+│  │  ├─icons
+│  │  │  │  clock.jpg
+│  │  │  │  companion.jpg
+│  │  │  │  horse.jpg
+│  │  │  │  red_marker.jpg
+│  │  │  │  shoot.jpg
+│  │  │  │  
+│  │  │  └─keys
+│  │  │          enter.jpg
+│  │  │          left_mouse.jpg
+│  │  │          mouse.jpg
+│  │  │          right_mouse.jpg
+│  │  │          shift.jpg
+│  │  │          space.jpg
+│  │  │          
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      information_text_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      success_detection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          information_text_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          success_detection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  ├─saves
+│  │  │      mission2
+│  │  │      open_ended_mission
+│  │  │      
+│  │  └─skills
+│  │          skill_lib.json
+│  │          
+│  ├─skylines
+│  │  ├─prompts
+│  │  │  └─templates
+│  │  │          action_planning.prompt
+│  │  │          information_gathering.prompt
+│  │  │          self_reflection.prompt
+│  │  │          task_inference.prompt
+│  │  │          
+│  │  ├─saves
+│  │  │      skylines_initial.crp
+│  │  │      
+│  │  └─skills
+│  │          skill_lib.json
+│  │          skill_lib_basic.json
+│  │          
+│  ├─software
+│  │  └─samples
+│  │          out_of_target_screen.jpg
+│  │          out_of_target_screen_som.jpg
+│  │          
+│  ├─spacy
+│  │  └─data
+│  │          en_core_web_lg-3.7.1.tar.gz
+│  │          
+│  ├─stardew
+│  │  ├─icons
+│  │  │  ├─inventory
+│  │  │  │      axe.jpg
+│  │  │  │      blank.jpg
+│  │  │  │      empty_watering_can.jpg
+│  │  │  │      fiber.jpg
+│  │  │  │      full_watering_can.jpg
+│  │  │  │      hoe.jpg
+│  │  │  │      parsnip.jpg
+│  │  │  │      parsnip_seeds.jpg
+│  │  │  │      pickaxe.jpg
+│  │  │  │      sap.jpg
+│  │  │  │      scythe.jpg
+│  │  │  │      stone.jpg
+│  │  │  │      wood.jpg
+│  │  │  │      
+│  │  │  └─nums
+│  │  │          0.jpg
+│  │  │          1.jpg
+│  │  │          2.jpg
+│  │  │          3.jpg
+│  │  │          4.jpg
+│  │  │          5.jpg
+│  │  │          6.jpg
+│  │  │          7.jpg
+│  │  │          8.jpg
+│  │  │          9.jpg
+│  │  │          
+│  │  ├─prompts
+│  │  │  ├─inputs
+│  │  │  │      action_planning.json
+│  │  │  │      information_gathering.json
+│  │  │  │      information_text_gathering.json
+│  │  │  │      information_toolbar_gathering.json
+│  │  │  │      self_reflection.json
+│  │  │  │      success_detection.json
+│  │  │  │      task_inference.json
+│  │  │  │      
+│  │  │  └─templates
+│  │  │          action_planning_cultivation.prompt
+│  │  │          action_planning_farm_clearup.prompt
+│  │  │          action_planning_shopping.prompt
+│  │  │          information_gathering_cultivation.prompt
+│  │  │          information_gathering_farm_clearup.prompt
+│  │  │          information_gathering_shopping.prompt
+│  │  │          information_text_gathering.prompt
+│  │  │          information_toolbar_gathering_cultivation.prompt
+│  │  │          information_toolbar_gathering_farm_clearup.prompt
+│  │  │          information_toolbar_gathering_shopping.prompt
+│  │  │          self_reflection_cultivation.prompt
+│  │  │          self_reflection_farm_clearup.prompt
+│  │  │          self_reflection_shopping.prompt
+│  │  │          success_detection.prompt
+│  │  │          task_inference_cultivation.prompt
+│  │  │          task_inference_farm_clearup.prompt
+│  │  │          task_inference_shopping.prompt
+│  │  │          
+│  │  ├─saves
+│  │  │  ├─Cradle_372588675
+│  │  │  │      Cradle_372588675
+│  │  │  │      SaveGameInfo
+│  │  │  │      
+│  │  │  └─Cradle_373947973
+│  │  │          Cradle_373947973
+│  │  │          SaveGameInfo
+│  │  │          
+│  │  └─skills
+│  │          skill_lib.json
+│  │          skill_lib_basic.json
+│  │          
+│  ├─tool
+│  │  │  general.cfg
+│  │  │  
+│  │  └─subfinder
+│  │          test.srt
+│  │          
+│  └─xiuxiu
+│      ├─prompts
+│      │  ├─inputs
+│      │  │      action_planning.json
+│      │  │      information_gathering.json
+│      │  │      self_reflection.json
+│      │  │      task_inference.json
+│      │  │      
+│      │  └─templates
+│      │          action_planning.prompt
+│      │          information_gathering.prompt
+│      │          self_reflection.prompt
+│      │          task_inference.prompt
+│      │          
+│      └─skills
+│              skill_lib.json
+│              
+├─runs
+│  ├─1761048650.3205118
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761050532.605785
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051000.8024838
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051114.1509428
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051156.812613
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051197.5648603
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051359.683599
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051626.715465
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761051674.6890457
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761052426.0306067
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761052558.1372864
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761053987.87838
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761054094.073985
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761054119.689753
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761054264.3183687
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761054539.360092
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761056885.4013615
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761057038.4782934
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761057393.0815217
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761100500.423914
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761102615.6585503
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761102839.4319801
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761108042.3549604
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761108117.7638052
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761108791.9139686
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761109315.483722
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761109391.7146866
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761109469.0539663
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761109782.9064617
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761110059.237942
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761110128.566293
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761110207.949239
+│  │  └─logs
+│  │          cradle.log
+│  │          
+│  ├─1761110385.5798504
+│  │  │  screen_1761111325.3796566.jpg
+│  │  │  screen_1761111325.3796566_augmented.jpg
+│  │  │  
+│  │  ├─checkpoints
+│  │  ├─logs
+│  │  │      cradle.log
+│  │  │      log.md
+│  │  │      
+│  │  ├─videos
+│  │  │      video_slice_000000.mp4
+│  │  │      
+│  │  └─video_splits
+│  │          video_-00001.mp4
+│  │          
+│  ├─1761111391.833177
+│  │  │  base64_rec_1.jpg
+│  │  │  base64_rec_14.jpg
+│  │  │  base64_rec_20.jpg
+│  │  │  base64_rec_27.jpg
+│  │  │  base64_rec_8.jpg
+│  │  │  screen_1761111401.8624246.jpg
+│  │  │  screen_1761111401.8624246_augmented.jpg
+│  │  │  screen_1761111479.8951635.jpg
+│  │  │  
+│  │  ├─checkpoints
+│  │  │      checkpoint_000001.json
+│  │  │      
+│  │  ├─logs
+│  │  │      cradle.log
+│  │  │      log.md
+│  │  │      
+│  │  ├─videos
+│  │  │      video_slice_000000.mp4
+│  │  │      
+│  │  └─video_splits
+│  │          video_-00001.mp4
+│  │          
+│  ├─1761111633.7196844
+│  │  │  screen_1761111643.708425.jpg
+│  │  │  screen_1761111643.708425_augmented.jpg
+│  │  │  
+│  │  ├─checkpoints
+│  │  ├─logs
+│  │  │      cradle.log
+│  │  │      
+│  │  ├─videos
+│  │  │      video_slice_000000.mp4
+│  │  │      
+│  │  └─video_splits
+│  │          video_-00001.mp4
+│  │          
+│  ├─1761111741.0262911
+│  │  ├─logs
+│  │  │      cradle.log
+│  │  │      
+│  │  ├─videos
+│  │  └─video_splits
+│  └─1761112363.82005
+│      │  screen_1761112372.743958.jpg
+│      │  screen_1761112372.743958_augmented.jpg
+│      │  
+│      ├─checkpoints
+│      ├─logs
+│      │      cradle.log
+│      │      
+│      ├─videos
+│      │      video_slice_000000.mp4
+│      │      
+│      └─video_splits
+│              video_-00001.mp4
+│              
+└─__pycache__
+        log_processor.cpython-310.pyc
+        

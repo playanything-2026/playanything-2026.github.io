@@ -1,0 +1,98 @@
+{
+    "env_name": "彩虹小马的求知欲小游戏",
+    "sub_path": "minigame",
+    "env_short_name": "mylittlepony",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "控制彩虹小马在场景中移动，避开障碍，收集所有目标物品，并到达关卡的终点。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "mouse_click"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "move_up",
+            "move_down",
+            "press_key"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/mylittlepony/prompts/templates/information_gathering.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/mylittlepony/prompts/templates/self_reflection.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/mylittlepony/prompts/templates/task_inference.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/mylittlepony/prompts/templates/action_planning.prompt"
+        }
+    }
+}

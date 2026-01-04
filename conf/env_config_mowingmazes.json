@@ -1,0 +1,98 @@
+{
+    "env_name": "MOWING MAZES ",
+    "sub_path": "minigame",
+    "env_short_name": "mowingmazes",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "在迷宫中移动，将地图上的所有草地都割完，完成当前迷宫关卡。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "move_down"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "press_key",
+            "mouse_click"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    250,
+                    130,
+                    1350,
+                    830
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                   250,
+                    130,
+                    1350,
+                    830
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/mowingmazes/prompts/templates/information_gatheringv2.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/mowingmazes/prompts/templates/self_reflectionv2.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/mowingmazes/prompts/templates/task_inferencev2.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/mowingmazes/prompts/templates/action_planningv2.prompt"
+        }
+    }
+}

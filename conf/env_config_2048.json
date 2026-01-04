@@ -1,0 +1,97 @@
+{
+    "env_name": "2048 - 免费在线玩!",
+    "sub_path": "minigame",
+    "env_short_name": "2048",
+    "is_game": true,
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "通过滑动合并数字方块，尝试达到2048或更高的数字，获得最高分数。",
+            "sub_task_description_list": []
+        }
+    ],
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "move_down"
+        ],
+        "skill_names_deny": [
+            "mouse_click",
+            "press_key",
+            "jump_left",
+            "jump_right"
+        ],
+        "skill_names_allow": [],
+        "skill_composition_enabled": false,
+        "skill_composition_interval": 4
+    },
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {}
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    4,
+                    0,
+                    1332,
+                    704
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    4,
+                    0,
+                    1332,
+                    704
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/2048/prompts/templates/information_gathering-8B-5.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/2048/prompts/templates/self_reflection-8B-5.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/2048/prompts/templates/task_inference-8B-5.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/2048/prompts/templates/action_planning-8B-5.prompt"
+        }
+    },
+    "game_region": {
+        "left": 208,
+        "top": 142,
+        "width": 1256,
+        "height": 700,
+        "clamp_mouse": true
+    }
+}

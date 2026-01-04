@@ -1,0 +1,98 @@
+{
+    "env_name": "MATCH ARENA - 免费在线玩!",
+    "sub_path": "minigame",
+    "env_short_name": "match_arena",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "通过鼠标操作交换相邻方块并进行三消或多消，达成关卡目标（例如：清除特定数量的方块、清除障碍物）。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "mouse_click"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "move_down",
+            "press_key"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    294,
+                    142,
+                    1350,
+                    750
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    294,
+                    142,
+                    1350,
+                    750
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/match_arena/prompts/templates/information_gathering.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/match_arena/prompts/templates/self_reflection.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/match_arena/prompts/templates/task_inference.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/match_arena/prompts/templates/action_planning.prompt"
+        }
+    }
+}

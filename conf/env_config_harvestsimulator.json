@@ -1,0 +1,96 @@
+{
+    "env_name": "HARVEST SIMULATOR - 免费在线玩!",
+    "sub_path": "minigame",
+    "env_short_name": "harvestsimulator",
+    "is_game": true,
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "通过驾驶农用机械完成耕种与收割循环",
+            "sub_task_description_list": []
+        }
+    ],
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "move_down"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "mouse_click",
+            "press_key",
+            "jump_left",
+            "jump_right"
+        ],
+        "skill_names_allow": []
+    },
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    4,
+                    0,
+                    1332,
+                    704
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    4,
+                    0,
+                    1332,
+                    704
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/harvestsimulator/prompts/templates/information_gathering-4B-5.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/harvestsimulator/prompts/templates/self_reflection-4B-5.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/harvestsimulator/prompts/templates/task_inference-4B-5.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/harvestsimulator/prompts/templates/action_planning-4B-5.prompt"
+        }
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "env_name": "粘液实验室2小游戏",
+    "sub_path": "minigame",
+    "env_short_name": "slimelab2",
+    "is_game": true,
+    
+    "skill_registry_name": "cradle.environment.minigame.skill_registry.MiniGameSkillRegistry",
+    "ui_control_name": "cradle.environment.minigame.ui_control.MiniGameUIControl",
+    
+    "task_description_list": [
+        {
+            "id": 1,
+            "task_description": "控制粘液角色，在实验室中移动、跳跃和粘附，避开障碍和敌人，找到出口。",
+            "sub_task_description_list": []
+        }
+    ],
+    
+    "skill_configs": {
+        "skill_mode": "Basic",
+        "skill_names_basic": [
+            "move_left",
+            "move_right",
+            "move_up",
+            "press_key",
+            "move_down",
+            "jump_left",
+            "jump_right"
+        ],
+        "skill_names_movement": [],
+        "skill_names_map": [],
+        "skill_names_trade": [],
+        "skill_names_deny": [
+            "mouse_click"
+        ],
+        "skill_names_allow": []
+    },
+    
+    "provider_configs": {
+        "coordinates_provider": {
+            "raw_coordinates": {
+                "line_type": {},
+                "max_line_id": 0,
+                "point_type": {},
+                "max_point_id": 0
+            }
+        },
+        "augment_provider": {
+            "draw_axis": true,
+            "draw_mask_panel": false,
+            "mask_panel_config": {},
+            "axis_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 5,
+                "axis_color": "yellow",
+                "font_color": "yellow",
+                "font_size": 50,
+                "scale_length": 20
+            },
+            "draw_grid": true,
+            "grid_config": {
+                "crop_region": [
+                    94,
+                    142,
+                    1254,
+                    1030
+                ],
+                "axis_division": [
+                    4,
+                    4
+                ],
+                "axis_linewidth": 3,
+                "axis_color": "red",
+                "font_color": "white",
+                "font_size": 50
+            }
+        },
+        "information_gathering_provider": {
+            "template_path": "./res/slimelab2/prompts/templates/information_gatheringv1.prompt"
+        },
+        "self_reflection_provider": {
+            "template_path": "./res/slimelab2/prompts/templates/self_reflectionv1.prompt"
+        },
+        "task_inference_provider": {
+            "template_path": "./res/slimelab2/prompts/templates/task_inferencev1.prompt",
+            "use_subtask": true
+        },
+        "action_planning_provider": {
+            "template_path": "./res/slimelab2/prompts/templates/action_planningv1.prompt"
+        }
+    }
+}

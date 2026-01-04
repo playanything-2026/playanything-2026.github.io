@@ -1,0 +1,7 @@
+cache/
+res/
+docs/video/
+*.tar.gz
+*.mp4
+*.ckpt
+.idea/

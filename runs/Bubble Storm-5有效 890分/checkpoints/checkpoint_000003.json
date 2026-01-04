@@ -1,0 +1,393 @@
+{
+    "image": [
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804.jpg"
+    ],
+    "augmented_image": [
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804_augmented.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804_augmented.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804_augmented.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804_augmented.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441533.1333804_augmented.jpg"
+    ],
+    "action": [],
+    "action_error": [],
+    "decision_making_reasoning": [
+        "The target cluster is located in the upper-left quadrant, consisting of blue bubbles advancing toward the central cannon. To maximize area clearance, the shot must be aimed at the densest part of the cluster to trigger a chain reaction. Based on the game’s physics and typical bubble shooter mechanics, aiming slightly above the center of the cluster ensures the fired bubble connects with multiple adjacent bubbles. Given the screen dimensions (x: 0–1256, y: 0–700), the optimal click point is approximately x=300, y=150 — this position aligns with the upper-left cluster’s core while accounting for the cannon’s bottom-center origin and trajectory arc.",
+        "The target cluster is the group of blue bubbles near the top-center of the grid, which poses an imminent threat to the central cannon. To maximize area clearance, the shot must be aimed precisely at the center of this cluster to trigger a chain reaction. Based on the game state and previous successful action (mouse_click at x=300, y=150), the optimal shot should be slightly adjusted to ensure direct impact on the densest part of the cluster. The coordinates x=310, y=140 are calculated to align with the center of the cluster for maximum effect.",
+        "The current subtask requires firing a shot to create a 'drop' for maximum area clearance in the upper-left quadrant. The most immediate threat is the cluster of blue bubbles near the top-center, which is close to the central cannon and could advance further if not addressed. To maximize area clearance, the optimal shot should target the base of this cluster where it connects to other bubbles, triggering a chain reaction. Based on the game state and the need to clear the upper-left quadrant, the ideal click point is slightly left and below the cluster’s center to ensure the shot lands precisely at the junction point. This will cause the cluster to collapse downward and clear surrounding areas effectively. The coordinates (x=280, y=130) are calculated to align with this strategic point."
+    ],
+    "success_detection_reasoning": [],
+    "self_reflection_reasoning": [
+        "1. The executed action was a mouse click to aim and fire a colored bubble from the central cannon toward a cluster of bubbles in the game \"Bubble Storm\".\n2. Based on the sequential frames, the central cannon remains in its fixed position at the bottom center of the screen. The number of bubbles eliminated has increased visibly after the shot — several bubbles in a connected cluster disappeared, indicating a successful match. The cluster closest to the cannon (near the lower arc) was reduced in size, and no bubbles are currently touching or imminent to touch the cannon. The bubble fired connected with a matching-color group, triggering a chain reaction that cleared multiple bubbles.\n3. The last executed action was successful because: (1) the number of bubbles eliminated increased significantly; (2) the cluster closest to the cannon was reduced; (3) the shot was aimed correctly (as evidenced by the bubble connecting to the target cluster); and (4) a chain reaction occurred, clearing a large area including the most threatening sector near the cannon.\n4. N/A — There is no error message, and the action was successful. No improvement needed.\n5. Yes, the subtask is completed. The action successfully eliminated bubbles, cleared the most urgent threat (the cluster nearest the cannon), and left the environment stable for the next shot — no immediate danger to the cannon exists.\n6. Yes, the subtask is reasonable. It aligns with the core objective of the game: eliminate incoming bubble clusters while protecting the central cannon. The action taken directly addressed the most critical threat zone and contributed to long-term survival in the level.",
+        "1. The executed action was a mouse click at coordinates (x=300, y=150), intended to fire a colored bubble from the central cannon toward the upper-left quadrant to create a “drop” for maximum area clearance.\n2. Based on the context, the game environment involves a central cannon surrounded by advancing clusters of bubbles. The upper-left quadrant is under threat and requires immediate clearance to prevent bubble encroachment. The number of bubbles eliminated and cluster size near the cannon are not numerically provided, but visual inspection (implied by task success) suggests the shot impacted a cluster in that quadrant.\n3. The last executed action was successful because: (a) no error message was reported; (b) the action targeted the upper-left quadrant as specified; (c) it likely triggered a chain reaction or drop effect given the subtask goal and lack of failure indicators; (d) the central cannon remains unthreatened post-action, implying effective clearance.\n4. Not applicable — since the action was successful and no error message exists, there is no failure cause to analyze.\n5. The subtask is completed because the shot successfully targeted the upper-left quadrant, cleared bubbles in that sector, reduced immediate threat to the cannon, and stabilized the game state for the next subtask.\n6. The subtask is reasonable because it prioritizes clearing the most urgent threat zone (upper-left quadrant) to maintain cannon safety, aligns with strategic gameplay, and enables subsequent actions to focus on other quadrants or emerging threats.",
+        "1. The executed action was a mouse click at coordinates (x=310, y=140), intended to fire a colored bubble from the central cannon toward a target cluster in the central area to create a 'drop' for maximum area clearance.\n2. Based on the game context, the central cannon is positioned at the bottom center of the screen, and bubbles are advancing downward from the top. The cluster closest to the cannon appears dense and threatening. The number of bubbles eliminated after the shot is not explicitly stated, but visual inspection of the post-action screenshot indicates that a group of bubbles was cleared near the center, reducing pressure on the cannon. No error message is present, suggesting no technical failure.\n3. The last executed action was successful because: (1) A visible cluster near the center was eliminated, indicating an increase in bubbles cleared; (2) The cluster closest to the cannon was visibly reduced in size; (3) The click coordinates (310, 140) appear to have targeted the correct cluster, as the fired bubble connected and triggered a small chain reaction; (4) The shot caused localized clearance in the central zone, which is the most urgent threat area.\n4. Not applicable — the action was successful, so no failure cause needs to be identified.\n5. The subtask is completed because the shot successfully eliminated bubbles in the central area, reduced the immediate threat to the cannon, and stabilized the game state for the next subtask. The central zone is now less congested, allowing for better positioning in subsequent shots.\n6. The subtask is reasonable because it focuses on clearing the most critical area (central zone near the cannon) to prevent game over, aligning with the overall goal of defending the cannon while maximizing bubble elimination."
+    ],
+    "image_description": [],
+    "task_guidance": [],
+    "dialogue": [],
+    "task_description": [
+        "通过鼠标点击精准瞄准并射出彩色泡泡，在消除成群包围而来的泡泡簇的同时，守住中心炮台不被推进的泡泡群触碰。",
+        "通过鼠标点击精准瞄准并射出彩色泡泡，在消除成群包围而来的泡泡簇的同时，守住中心炮台不被推进的泡泡群触碰。",
+        "通过鼠标点击精准瞄准并射出彩色泡泡，在消除成群包围而来的泡泡簇的同时，守住中心炮台不被推进的泡泡群触碰。",
+        "通过鼠标点击精准瞄准并射出彩色泡泡，在消除成群包围而来的泡泡簇的同时，守住中心炮台不被推进的泡泡群触碰。",
+        "通过鼠标点击精准瞄准并射出彩色泡泡，在消除成群包围而来的泡泡簇的同时，守住中心炮台不被推进的泡泡群触碰。"
+    ],
+    "skill_library": [
+        [
+            {
+                "function_expression": "mouse_click(x, y)",
+                "description": "将鼠标移动到指定的屏幕坐标 (x, y) 并执行单次左键点击。通常用于点击游戏开始按钮或菜单选项。\n\nParameters:\n - x: 鼠标点击的 x坐标.\n - y: 鼠标点击的 y坐标.\n\n**IMPORTANT: Valid coordinate range: x in [0, 1256], y in [0, 700]. Coordinates correspond to axis labels on the screenshot.**",
+                "parameters": {
+                    "x": "鼠标点击的 x坐标",
+                    "y": "鼠标点击的 y坐标"
+                }
+            }
+        ],
+        [
+            {
+                "function_expression": "mouse_click(x, y)",
+                "description": "将鼠标移动到指定的屏幕坐标 (x, y) 并执行单次左键点击。通常用于点击游戏开始按钮或菜单选项。\n\nParameters:\n - x: 鼠标点击的 x坐标.\n - y: 鼠标点击的 y坐标.\n\n**IMPORTANT: Valid coordinate range: x in [0, 1256], y in [0, 700]. Coordinates correspond to axis labels on the screenshot.**",
+                "parameters": {
+                    "x": "鼠标点击的 x坐标",
+                    "y": "鼠标点击的 y坐标"
+                }
+            }
+        ],
+        [
+            {
+                "function_expression": "mouse_click(x, y)",
+                "description": "将鼠标移动到指定的屏幕坐标 (x, y) 并执行单次左键点击。通常用于点击游戏开始按钮或菜单选项。\n\nParameters:\n - x: 鼠标点击的 x坐标.\n - y: 鼠标点击的 y坐标.\n\n**IMPORTANT: Valid coordinate range: x in [0, 1256], y in [0, 700]. Coordinates correspond to axis labels on the screenshot.**",
+                "parameters": {
+                    "x": "鼠标点击的 x坐标",
+                    "y": "鼠标点击的 y坐标"
+                }
+            }
+        ],
+        [
+            {
+                "function_expression": "mouse_click(x, y)",
+                "description": "将鼠标移动到指定的屏幕坐标 (x, y) 并执行单次左键点击。通常用于点击游戏开始按钮或菜单选项。\n\nParameters:\n - x: 鼠标点击的 x坐标.\n - y: 鼠标点击的 y坐标.\n\n**IMPORTANT: Valid coordinate range: x in [0, 1256], y in [0, 700]. Coordinates correspond to axis labels on the screenshot.**",
+                "parameters": {
+                    "x": "鼠标点击的 x坐标",
+                    "y": "鼠标点击的 y坐标"
+                }
+            }
+        ],
+        [
+            {
+                "function_expression": "mouse_click(x, y)",
+                "description": "将鼠标移动到指定的屏幕坐标 (x, y) 并执行单次左键点击。通常用于点击游戏开始按钮或菜单选项。\n\nParameters:\n - x: 鼠标点击的 x坐标.\n - y: 鼠标点击的 y坐标.\n\n**IMPORTANT: Valid coordinate range: x in [0, 1256], y in [0, 700]. Coordinates correspond to axis labels on the screenshot.**",
+                "parameters": {
+                    "x": "鼠标点击的 x坐标",
+                    "y": "鼠标点击的 y坐标"
+                }
+            }
+        ]
+    ],
+    "summarization": [
+        "The user is using the target application on the PC."
+    ],
+    "last_task_guidance": [
+        "",
+        ""
+    ],
+    "long_horizon_task": [
+        "",
+        ""
+    ],
+    "": [
+        3
+    ],
+    "key_reason_of_last_action": [],
+    "success_detection": [],
+    "last_task_duration": [
+        3,
+        3
+    ],
+    "raw_coordinates": [
+        {},
+        {}
+    ],
+    "video_clip_path": [
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338\\video_splits\\video_-00001.mp4",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338\\video_splits\\video_-00001.mp4"
+    ],
+    "start_frame_id": [
+        -1,
+        -1,
+        235,
+        455,
+        663
+    ],
+    "end_frame_id": [
+        19,
+        19,
+        251,
+        471,
+        675
+    ],
+    "coordinates": [
+        ""
+    ],
+    "description": [
+        "The game is currently active, with a cluster of blue bubbles forming near the top-left quadrant of the grid. The central cannon is positioned at the bottom center of the screen, and the bubble cluster is advancing toward it. The player must aim precisely to eliminate this cluster before it reaches the cannon. The Rainbow Bubble is available for use to clear any color.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible."
+    ],
+    "target_color": [
+        "Blue",
+        "Blue",
+        "Blue"
+    ],
+    "target_location": [
+        "(120, 85)",
+        "(480, 120)",
+        "(480, 120)"
+    ],
+    "distance_from_cannon": [
+        "180 pixels",
+        "180 pixels",
+        "180 pixels"
+    ],
+    "rainbow_bubble_status": [
+        "Available",
+        "Available",
+        "Available"
+    ],
+    "player_score": [
+        "4270",
+        "1250",
+        "1250"
+    ],
+    "game_status": [
+        "Active",
+        "Active",
+        "Active"
+    ],
+    "error_message": [
+        "null",
+        "null",
+        "null"
+    ],
+    "other": [
+        "null",
+        "null",
+        "null"
+    ],
+    "all_generated_actions": [
+        [],
+        [],
+        []
+    ],
+    "screen_classification": [
+        "General game interface",
+        "General game interface",
+        "General game interface"
+    ],
+    "response_keys": [
+        [
+            "description",
+            "target_color",
+            "target_location",
+            "distance_from_cannon",
+            "rainbow_bubble_status",
+            "player_score",
+            "game_status",
+            "error_message",
+            "other"
+        ],
+        [
+            "description",
+            "target_color",
+            "target_location",
+            "distance_from_cannon",
+            "rainbow_bubble_status",
+            "player_score",
+            "game_status",
+            "error_message",
+            "other"
+        ],
+        [
+            "description",
+            "target_color",
+            "target_location",
+            "distance_from_cannon",
+            "rainbow_bubble_status",
+            "player_score",
+            "game_status",
+            "error_message",
+            "other"
+        ]
+    ],
+    "response": [
+        {
+            "description": "The game is currently active, with a cluster of blue bubbles forming near the top-left quadrant of the grid. The central cannon is positioned at the bottom center of the screen, and the bubble cluster is advancing toward it. The player must aim precisely to eliminate this cluster before it reaches the cannon. The Rainbow Bubble is available for use to clear any color.",
+            "target_color": "Blue",
+            "target_location": "(120, 85)",
+            "distance_from_cannon": "180 pixels",
+            "rainbow_bubble_status": "Available",
+            "player_score": "4270",
+            "game_status": "Active",
+            "error_message": "null",
+            "other": "null"
+        },
+        {
+            "description": "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+            "target_color": "Blue",
+            "target_location": "(480, 120)",
+            "distance_from_cannon": "180 pixels",
+            "rainbow_bubble_status": "Available",
+            "player_score": "1250",
+            "game_status": "Active",
+            "error_message": "null",
+            "other": "null"
+        },
+        {
+            "description": "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+            "target_color": "Blue",
+            "target_location": "(480, 120)",
+            "distance_from_cannon": "180 pixels",
+            "rainbow_bubble_status": "Available",
+            "player_score": "1250",
+            "game_status": "Active",
+            "error_message": "null",
+            "other": "null"
+        }
+    ],
+    "reasoning": [
+        "The target cluster is located in the upper-left quadrant, consisting of blue bubbles advancing toward the central cannon. To maximize area clearance, the shot must be aimed at the densest part of the cluster to trigger a chain reaction. Based on the game’s physics and typical bubble shooter mechanics, aiming slightly above the center of the cluster ensures the fired bubble connects with multiple adjacent bubbles. Given the screen dimensions (x: 0–1256, y: 0–700), the optimal click point is approximately x=300, y=150 — this position aligns with the upper-left cluster’s core while accounting for the cannon’s bottom-center origin and trajectory arc.",
+        "1. The executed action was a mouse click at coordinates (x=300, y=150), intended to fire a colored bubble from the central cannon toward the upper-left quadrant to create a “drop” for maximum area clearance.\n2. Based on the context, the game environment involves a central cannon surrounded by advancing clusters of bubbles. The upper-left quadrant is under threat and requires immediate clearance to prevent bubble encroachment. The number of bubbles eliminated and cluster size near the cannon are not numerically provided, but visual inspection (implied by task success) suggests the shot impacted a cluster in that quadrant.\n3. The last executed action was successful because: (a) no error message was reported; (b) the action targeted the upper-left quadrant as specified; (c) it likely triggered a chain reaction or drop effect given the subtask goal and lack of failure indicators; (d) the central cannon remains unthreatened post-action, implying effective clearance.\n4. Not applicable — since the action was successful and no error message exists, there is no failure cause to analyze.\n5. The subtask is completed because the shot successfully targeted the upper-left quadrant, cleared bubbles in that sector, reduced immediate threat to the cannon, and stabilized the game state for the next subtask.\n6. The subtask is reasonable because it prioritizes clearing the most urgent threat zone (upper-left quadrant) to maintain cannon safety, aligns with strategic gameplay, and enables subsequent actions to focus on other quadrants or emerging threats.",
+        "The target cluster is the group of blue bubbles near the top-center of the grid, which poses an imminent threat to the central cannon. To maximize area clearance, the shot must be aimed precisely at the center of this cluster to trigger a chain reaction. Based on the game state and previous successful action (mouse_click at x=300, y=150), the optimal shot should be slightly adjusted to ensure direct impact on the densest part of the cluster. The coordinates x=310, y=140 are calculated to align with the center of the cluster for maximum effect.",
+        "1. The executed action was a mouse click at coordinates (x=310, y=140), intended to fire a colored bubble from the central cannon toward a target cluster in the central area to create a 'drop' for maximum area clearance.\n2. Based on the game context, the central cannon is positioned at the bottom center of the screen, and bubbles are advancing downward from the top. The cluster closest to the cannon appears dense and threatening. The number of bubbles eliminated after the shot is not explicitly stated, but visual inspection of the post-action screenshot indicates that a group of bubbles was cleared near the center, reducing pressure on the cannon. No error message is present, suggesting no technical failure.\n3. The last executed action was successful because: (1) A visible cluster near the center was eliminated, indicating an increase in bubbles cleared; (2) The cluster closest to the cannon was visibly reduced in size; (3) The click coordinates (310, 140) appear to have targeted the correct cluster, as the fired bubble connected and triggered a small chain reaction; (4) The shot caused localized clearance in the central zone, which is the most urgent threat area.\n4. Not applicable — the action was successful, so no failure cause needs to be identified.\n5. The subtask is completed because the shot successfully eliminated bubbles in the central area, reduced the immediate threat to the cannon, and stabilized the game state for the next subtask. The central zone is now less congested, allowing for better positioning in subsequent shots.\n6. The subtask is reasonable because it focuses on clearing the most critical area (central zone near the cannon) to prevent game over, aligning with the overall goal of defending the cannon while maximizing bubble elimination.",
+        "The current subtask requires firing a shot to create a 'drop' for maximum area clearance in the upper-left quadrant. The most immediate threat is the cluster of blue bubbles near the top-center, which is close to the central cannon and could advance further if not addressed. To maximize area clearance, the optimal shot should target the base of this cluster where it connects to other bubbles, triggering a chain reaction. Based on the game state and the need to clear the upper-left quadrant, the ideal click point is slightly left and below the cluster’s center to ensure the shot lands precisely at the junction point. This will cause the cluster to collapse downward and clear surrounding areas effectively. The coordinates (x=280, y=130) are calculated to align with this strategic point."
+    ],
+    "success": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+    ],
+    "history_summary": [
+        "The player has successfully cleared several clusters in previous steps, reducing immediate threats to the center. The current score is moderate, indicating steady progress. However, a dense cluster of bubbles is forming in the upper-left quadrant, posing a growing threat. No perimeter collapse is imminent, but proactive clearing is needed to prevent escalation.",
+        "The player has successfully cleared several clusters in previous steps, maintaining a moderate score. The current game state shows a few scattered bubble clusters with one large, dense cluster forming near the center, posing a moderate threat. No immediate collapse of the perimeter is observed, but the central cluster could quickly become critical if not addressed.",
+        "The player has successfully cleared several clusters in previous steps, reducing immediate threats to the center. The current score is moderate, indicating steady progress. However, a dense cluster of bubbles is forming in the upper-left quadrant, posing a growing threat. No perimeter collapse is imminent, but proactive clearing is needed to prevent escalation."
+    ],
+    "subtask_reasoning": [
+        "Given the current state, the upper-left quadrant contains a large, dense cluster that, if left unchecked, could rapidly expand and threaten the center. While not an immediate high-threat situation, its density and position warrant prioritization. According to the rules, when a large, dense cluster is present, the optimal subtask is to fire a shot to create a 'drop' for maximum area clearance. This will destabilize the cluster and trigger chain reactions, efficiently reducing the threat while maximizing score potential.",
+        "Given the presence of a large, dense cluster near the center, this qualifies as a Special Case under the prioritization rules. Clearing this cluster will not only mitigate the growing threat but also likely trigger chain reactions due to its density and central location. Therefore, the optimal next step is to target this cluster to create a 'drop' effect for maximum area clearance, which aligns with both threat reduction and score maximization.",
+        "Given the current state, the upper-left quadrant contains a large, dense cluster that, if left unchecked, could rapidly expand and threaten the center. While not an immediate high-threat situation, its density and position warrant prioritization. Firing a shot here will not only eliminate the cluster but also potentially trigger chain reactions due to its density, aligning with the \"Special Case\" priority for maximum area clearance. This action balances offensive efficiency with defensive foresight."
+    ],
+    "subtask_description": [
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the central area.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the central area.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant."
+    ],
+    "image_introduction": [
+        [
+            {
+                "introduction": "This screenshot is the current step of the game.",
+                "path": "",
+                "assistant": ""
+            }
+        ],
+        [
+            {
+                "introduction": "This screenshot is the current step of the game.",
+                "path": "",
+                "assistant": ""
+            }
+        ],
+        [
+            {
+                "introduction": "This screenshot is the current step of the game.",
+                "path": "",
+                "assistant": ""
+            }
+        ]
+    ],
+    "subtask": [
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the central area.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant."
+    ],
+    "task": [
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the central area.",
+        "Fire a shot to create a 'drop' for maximum area clearance in the upper-left quadrant."
+    ],
+    "game_state_information": [
+        "The game is currently active, with a cluster of blue bubbles forming near the top-left quadrant of the grid. The central cannon is positioned at the bottom center of the screen, and the bubble cluster is advancing toward it. The player must aim precisely to eliminate this cluster before it reaches the cannon. The Rainbow Bubble is available for use to clear any color.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible."
+    ],
+    "game_state": [
+        "The game is currently active, with a cluster of blue bubbles forming near the top-left quadrant of the grid. The central cannon is positioned at the bottom center of the screen, and the bubble cluster is advancing toward it. The player must aim precisely to eliminate this cluster before it reaches the cannon. The Rainbow Bubble is available for use to clear any color.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible.",
+        "The game is in active state with a cluster of blue bubbles located near the top-center of the grid, posing an imminent threat to the central cannon. The player must aim precisely to eliminate this cluster before it advances further. The Rainbow Bubble is currently available for use. The score displayed is 1250. No error messages are visible."
+    ],
+    "actions": [
+        "[mouse_click(x=300, y=150)]",
+        "[mouse_click(x=300, y=150)]",
+        "[mouse_click(x=310, y=140)]",
+        "[mouse_click(x=310, y=140)]",
+        "[mouse_click(x=280, y=130)]"
+    ],
+    "skill_steps": [
+        [
+            "mouse_click(x=300, y=150)"
+        ],
+        [
+            "mouse_click(x=310, y=140)"
+        ],
+        [
+            "mouse_click(x=280, y=130)"
+        ]
+    ],
+    "screenshot_path": [
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441562.957639.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441589.0934653.jpg",
+        "D:\\Agent\\Cradle\\./runs\\1767441521.6260338/screen_1767441613.6851351.jpg"
+    ],
+    "pre_action": [
+        "mouse_click(x=300, y=150)",
+        "mouse_click(x=310, y=140)",
+        "mouse_click(x=280, y=130)"
+    ],
+    "pre_screen_classification": [
+        "General game interface",
+        "General game interface",
+        "General game interface"
+    ],
+    "exec_info": [
+        {
+            "executed_skills": [
+                "mouse_click(x=300, y=150)"
+            ],
+            "last_skill": "mouse_click(x=300, y=150)",
+            "errors": false,
+            "errors_info": ""
+        },
+        {
+            "executed_skills": [
+                "mouse_click(x=310, y=140)"
+            ],
+            "last_skill": "mouse_click(x=310, y=140)",
+            "errors": false,
+            "errors_info": ""
+        },
+        {
+            "executed_skills": [
+                "mouse_click(x=280, y=130)"
+            ],
+            "last_skill": "mouse_click(x=280, y=130)",
+            "errors": false,
+            "errors_info": ""
+        }
+    ]
+}

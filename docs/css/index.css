@@ -39,14 +39,9 @@ body {
   object-fit: fit;
 }
 
-.publication-header .hero-body {
-}
-
 .publication-title {
     font-family: 'Google Sans', sans-serif;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
     margin: 0 auto;
     width: 80%;
 }
@@ -63,15 +58,6 @@ body {
     font-weight: bold;
 }
 
-.publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
-}
-
-.publication-authors {
-}
-
 .publication-authors a {
    color: hsl(204, 86%, 53%) !important;
 }
@@ -82,13 +68,6 @@ body {
 
 .author-block {
   display: inline-block;
-}
-
-.publication-banner img {
-}
-
-.publication-authors {
-  /*color: #4286f4;*/
 }
 
 .publication-video {
@@ -108,9 +87,6 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
@@ -124,35 +100,207 @@ body {
   font-size: 0;
 }
 
-.results-carousel video {
-  margin: 0;
-}
-
 .interpolation-panel {
   background: #f5f5f5;
   border-radius: 10px;
 }
 
-.interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
+/* ---- PlayAnything custom styles ---- */
+
+.content {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 80%;
 }
 
-.interpolation-video-column {
+.container.is-max-desktop {
+    max-width: 80%;
 }
 
-.interpolation-panel .slider {
-  margin: 0 !important;
+.columns.is-margin {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-#interpolation-image-wrapper {
-  width: 100%;
+.column.is-four-fifths {
+  flex: 0 0 90%;
+  max-width: 90%;
+  text-align: center;
 }
 
-#interpolation-image-wrapper img {
-  border-radius: 5px;
+.column.is-full-width {
+  flex: 0 0 90%;
+  max-width: 90%;
+  text-align: center;
 }
 
+.column img {
+  display: inline-block;
+  flex: 0 0 90%;
+  max-width: 80%;
+  height: auto;
+}
+
+.has-text-justified {
+    text-align: justify;
+    max-width: 80%;
+}
+
+.title.is-5 {
+  text-align: justify;
+  margin-left: 10%;
+}
+
+pre {
+    white-space: pre;
+    overflow-x: auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+code {
+    font-family: monospace;
+}
+
+/* ---- Highlight colors for PlayAnything ---- */
+.highlight-blue {
+    color: #3273dc;
+    font-weight: bold;
+}
+
+.highlight-green {
+    color: #23d160;
+    font-weight: bold;
+}
+
+/* ---- Results table ---- */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em auto;
+    font-size: 0.95em;
+}
+
+.results-table th,
+.results-table td {
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.results-table tr.ours {
+    background-color: #e8f5e9;
+    font-weight: 600;
+}
+
+.results-table tr.ours-refined {
+    background-color: #c8e6c9;
+    font-weight: 700;
+}
+
+/* ---- Module cards ---- */
+.module-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.module-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.module-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.module-card h4 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #363636;
+}
+
+.module-card p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.module-card .module-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* ---- Stats row ---- */
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #3273dc;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* ---- Game type tags ---- */
+.game-type-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 2px;
+}
+
+.tag-ic { background: #e3f2fd; color: #1565c0; }
+.tag-ce { background: #e8f5e9; color: #2e7d32; }
+.tag-ca { background: #fff3e0; color: #e65100; }
+.tag-cc { background: #fce4ec; color: #c62828; }
+
+/* ---- Demo placeholder ---- */
+.demo-placeholder {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+/* ---- Image row ---- */
 .image-row {
     display: flex;
     justify-content: center;
@@ -185,99 +333,20 @@ body {
     height: auto;
 }
 
-/* Custom styles in index.css */
-.content {
-    margin: 0 auto;
-    padding: 0 10px; /* Reduce side padding */
-    /*max-width: 1000px; !* Increase max-width to use more horizontal space *!*/
-    max-width: 80%
+/* ---- Game grid ---- */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    margin: 1em auto;
+    max-width: 900px;
 }
 
-/* Adjustments to container and column widths */
-.container.is-max-desktop {
-    /*max-width: 1200px; !* Increase max-width *!*/
-    max-width: 80%;
+.game-grid-item {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.85em;
+    text-align: center;
+    border: 1px solid #e0e0e0;
 }
-
-.columns.is-margin {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.column.is-four-fifths {
-  flex: 0 0 90%; /* Ensure column takes up more horizontal space */
-  max-width: 90%; /* Ensure column does not exceed this width */
-  text-align: center;
-}
-
-.column.is-full-width {
-  flex: 0 0 90%;
-  max-width: 90%;
-  text-align: center;
-}
-
-.column img {
-  display: inline-block;
-  flex: 0 0 90%;
-  max-width: 80%;
-  height: auto;
-}
-
-/* Optional: You can remove or adjust this if not needed */
-.has-text-justified {
-    text-align: justify;
-    max-width: 80%;
-}
-
-.three-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  /*margin: 1px;*/
-  padding: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.three-item .item {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
-  align-items: center;
-  width: 100%;
-}
-
-.three-item .item img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
-
-.title.is-5 {
-  text-align: justify;
-  margin-left: 10%;
-}
-
-pre {
-    white-space: pre;
-    overflow-x: auto;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-left: 14%;
-    margin-right: 14%;
-}
-
-code {
-    font-family: monospace;
-}
-
-
